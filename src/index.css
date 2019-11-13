@@ -1,0 +1,86 @@
+*{
+margin:0;
+padding: 0;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+  font-size:18px;
+}
+
+header.jumbotron{
+  margin-bottom: 0;
+}
+
+nav.navbar{
+  margin-bottom: 3em;
+}
+nav .navbar-nav{
+  width: 100%;
+  justify-content: center;
+}
+nav .navbar-nav li{
+  margin: 0 2em;
+}
+
+.loader{
+  display: flex;
+  justify-content: center;
+  padding: 2em 0;
+  min-width: 100%;
+}
+.loader div{
+  width: 3em;
+  flex: 0 0 3em;
+  height: 3em;
+  border-radius: 50%;
+  border-left: 0.25em solid red;
+  border-bottom: 0.25em solid blue;
+  border-right: 0.25em solid grey;
+  border-top: 0.25em solid black;
+  transition: all 1s;
+  animation: roundy 1s infinite linear;
+}
+@keyframes roundy{
+  0%{
+    transform: rotate(0)
+  }
+  100%{
+    transform: rotate(360deg)
+  }
+}
+
+.post{
+  margin-bottom: 1em;
+}
+
+li.user{
+  list-style: none;
+  margin:1em 0;
+}
+.user svg{
+  width: 1em;
+  margin-right: 0.5em;
+}
+.user svg path{
+  fill: #404040;
+}
+
+.album, .img {
+  margin-bottom:2em;
+}
+.album img, .img img{
+  max-width: 100%;
+  height: auto;
+}
+.album p{
+  margin-bottom: 0.1em;
+}
+
+.comments{
+  padding-top: 3em;
+}
